@@ -15,7 +15,7 @@ count = 0 # Amount of trio sums that are larger than the previous
 
 for i in range(0, length - 3, 1):
     this = data[i] + data[i + 1] + data[i + 2]
-    following = data[i + 1] + data [i + 2] + data [i + 3]
+    following = data[i + 1] + data[i + 2] + data[i + 3]
     
     if following > this:
         count += 1
