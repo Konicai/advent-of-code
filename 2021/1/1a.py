@@ -14,7 +14,4 @@ with open("measurements.txt", "r") as file:
             
         last = depth # Save the current depth for the next iteration
 
-print(count)            
-            
-            
-         
+print(count)
