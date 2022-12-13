@@ -7,6 +7,7 @@
 #include "day1/day1.h"
 #include "day2/day2.h"
 #include "day3/day3.h"
+#include "day4/day4.h"
 
 #define INPUT_FILE_FORMAT "%s\\day%u\\input.txt"
 
@@ -24,13 +25,13 @@ int main(void) {
     assert(getcwd(work_dir, sizeof(work_dir)) != NULL);
     printf("Current working directory: %s\n", work_dir);
 
-    unsigned day = 3;
+    unsigned day = 4;
 
     char *file_name = get_file_name(work_dir, day);
     FILE *input_file = fopen(file_name, "r");
     assert(input_file != NULL);
 
-    run3(input_file);
+    run4(input_file);
 
     fclose(input_file);
     free(file_name);
